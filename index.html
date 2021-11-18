@@ -1,0 +1,316 @@
+<!Doctype html>
+<html lang='es-AR'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>RestOnnline</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns-header">
+
+                    <h1><img src="iconos/icon_plate_mod.png" alt="logo" id="logo">RestOnnline</h1>
+
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+
+                            <img src="iconos/cart-solid.png" id="carro">
+                            <div id="carrito">
+
+                                <p class="vacio">carrito vacio</p>
+                                <table class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Plato</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="img/ashley-winkler-Dw7ldQfe3dU-unsplash.jpg" alt="" width="100">
+                                            </td>
+                                            <td>Yogurt con Copos y Arandanos</td>
+                                            <td>$90</td>
+                                            <td>
+                                                <a href="#" class="borrar-plato">X</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pesce-huang-KKMcWOAekVQ-unsplash.jpg" alt="" width="100">
+                                            </td>
+                                            <td>Sandwich Hungaros</td>
+                                            <td>$190</td>
+                                            <td>
+                                                <a href="#" class="borrar-plato">X</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="button u-full-width" onclick="vaciarCarrito();">vaciar
+                                        carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="social-redes">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/rené-morales-desarrollador-web-frontend" target="_blank" title="enlace a mi Linkedin" rel="nofollow" class="icon-linkedin" alt="linkedin">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank" title="enlace a mi Facebook" rel="nofollow" class="icon-facebook" alt="facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/moralesrenealejandro/" target="_blank" title="enlace a mi Instagram" rel="nofollow" class="icon-instagram" alt="instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:renemoralesalejandro@gmail.com?subject=Consulta.&body=Email
+                Using Mailto.co.uk" class="icon-email" alt="email" title="enlace a mi Correo">
+                    <i class='bx bx-mail-send'></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Prueba uno de nuestros platos</h2>
+                        <p>Descuentos exclusivos los findes!</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaria probar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>100 platos diferentes<br> Explora los nuevos platos</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Chef expertos<br>Prueba las nuevas combinaciones</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Descuentos exclusivos<br>Prueba tu postre favorito</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lista-platos" class="container">
+        <h1 class="encabezado">Pedidos en linea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/delfina-iacub-7u-egHjTeKQ-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Torta de Fresas</h4>
+                        <p>2 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$450 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="1">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pesce-huang-KKMcWOAekVQ-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Sandwich Hungaros</h4>
+                        <p>4 variedades disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$380 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="1">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pranav-kumar-jain-_YNnpjpdyyY-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Batido de Chocolate</h4>
+                        <p>3 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$210 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="1">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/gaby-yerden-ppPIuKtICdY-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Budin de Mandarina</h4>
+                        <p>2 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$290 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="4">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ashley-winkler-Dw7ldQfe3dU-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Yogurt con Copos y Arandanos</h4>
+                        <p>2 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$180 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="5">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pesce-huang-UTVXrzoMQgU-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Sandwich de Salmon y vegetales</h4>
+                        <p>3 tamaños Disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$230 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="1">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/melnychuk-nataliya-fwmTmFbADCI-unsplash.jpg" class="imagen-plato
+                            u-full-width heigth" heigth="100">
+                    <div class="info-card">
+                        <h4>Waffles con Arandanos y Miel</h4>
+                        <p>4 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$220 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="7">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ashley-winkler-Dw7ldQfe3dU-unsplash.jpg" class="imagen-plato
+                            u-full-width">
+                    <div class="info-card">
+                        <h4>Yogurt con Copos y Arandanos</h4>
+                        <p>2 tamaños disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$180 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="5">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/gaby-yerden-vaOnkfcNX94-unsplash.jpg" class="imagen-plato u-full-width">
+                    <div class="info-card">
+                        <h4>Ensalada de Frutos Secos y Manzana</h4>
+                        <p>2 tamaños Disponibles</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$160 <span class="u-pull-right"></span></p>
+                        <a href="" class="u-full-width button-primary button
+                                input agregar-carrito" data-id="6">Agregar
+                                al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                        <nav class="menu">
+                            <a class="enlace" href="">Pedidos a domicilio</a>
+                            <a class="enlace" href="">Pedidos en linea</a>
+                            <a class="enlace" href="">Pedidos por telefono</a>
+                            <a class="enlace" href="">Redes sociales</a>
+                        </nav>
+                    </div>
+                    <div class="four columns">
+                        <nav class="menu">
+                            <a class="enlace" href="">Restaurante</a>
+                            <a class="enlace" href="">Ubicacion</a>
+                            <a class="enlace" href="">Telefono</a>
+                        </nav>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rené-morales-desarrollador-web-frontend" target="_blank" title="enlace a mi Linkedin" rel="nofollow" class="social-media-icon" alt="linkedin">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/moralesrenealejandro/" target="_blank" title="enlace a mi Instagram" rel="nofollow" class="social-media-icon" alt="instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="mailto:renemoralesalejandro@gmail.com?subject=Consulta.&body=Email
+                                Using Mailto.co.uk" class="social-media-icon" alt="email" title="enlace a mi Correo">
+                            <i class='bx bx-mail-send'></i>
+                        </a>
+                    </div>
+                    <h2 class='mi-correo'>renemoralesalejandro@gmail.com</h2>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="../jquery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+
+</body>
