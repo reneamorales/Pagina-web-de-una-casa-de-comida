@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,8 +23,8 @@ header {
     background: -webkit-linear-gradient(left, rgba(87, 5, 5, 0.918)100%, #430507 100%);
     text-align: center;
     width: 100%;
-    border-top: 15px solid rgb(174, 10, 10);
-    border-bottom: 15px solid rgb(174, 10, 10);
+    border-top: 10px solid rgb(174, 10, 10);
+    border-bottom: 10px solid rgb(174, 10, 10);
 }
 
 h1 {
@@ -56,24 +58,6 @@ div {
     box-sizing: border-box;
 }
 
-@media(min-width: 750px) {
-    header {
-        text-align: left;
-    }
-}
-
-@media(min-width: 350px) {
-    .columns-header {
-        width: 40%;
-        box-sizing: border-box;
-    }
-    .submenu {
-        position: relative;
-        top: 15px;
-        left: 20px;
-    }
-}
-
 #logo {
     height: 100px;
     width: 100px;
@@ -81,9 +65,9 @@ div {
 }
 
 .borrar-plato {
-    background-color: blue;
+    background-color: black;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 10px;
     text-decoration: none;
     color: silver;
     font-weight: bold;
@@ -115,19 +99,19 @@ ul {
 }
 
 .social-redes ul li .icon-linkedin {
-    background: rgba(0, 0, 0, 0.802);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .social-redes ul li .icon-facebook {
-    background: rgba(3, 3, 172, 0.802);
+    background: rgba(3, 3, 172, 0.8);
 }
 
 .social-redes ul li .icon-instagram {
-    background: rgba(204, 58, 83, 0.802);
+    background: rgba(204, 58, 83, 0.8);
 }
 
 .social-redes ul li .icon-email {
-    background: rgba(121, 116, 116, 0.802);
+    background: rgba(121, 116, 116, 0.8);
 }
 
 .social-redes ul li a:hover {
@@ -156,48 +140,48 @@ ul {
     display: none;
 }
 
-.submenu:hover #carrito {
-    display: block;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 1;
-    background: rgba(170, 9, 9, 0.774);
-    padding: 60%;
-    border-radius: 10px;
+#carro {
+    padding: 5px;
 }
 
-@media(min-width: 350px) {
-    .submenu:hover #carrito {
-        padding: 30%;
-        border-radius: 5px;
-    }
-    .vacio {
-        padding: 2%;
-        background-color: orange;
-        text-align: center;
-        border-radius: 2px;
-        color: white;
-    }
+#carro:hover {
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 3px;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 15px;
+    top: 100%;
+    z-index: 1;
+    background: rgba(170, 9, 9, 0.8);
+    padding: 60%;
+    border-radius: 5px;
 }
 
 .vacio {
     padding: 10px;
-    background-color: orange;
+    background-color: rgba(0, 0, 0);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
 }
 
 .button {
-    background-color: rgba(80, 14, 80, 0.877);
-    color: pink;
+    background-color: rgba(80, 14, 80, 0.5);
+    color: rgb(113, 113, 113);
+}
+
+.button:hover {
+    background-color: rgba(80, 14, 80, 0.8);
+    color: white;
 }
 
 .contenido-hero {
     margin-top: 80px;
-    color: rgba(170, 9, 9, 0.774);
+    color: rgb(170, 9, 9);
     font-size: 20px;
 }
 
@@ -212,7 +196,7 @@ ul {
     color: black;
 }
 
-.contenido-hero form .submit-buscador {
+.contenido-hero .submit-buscador {
     position: absolute;
     right: 0;
     top: 0;
@@ -226,6 +210,9 @@ ul {
     background-repeat: no-repeat;
     border: none;
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barra {
@@ -245,12 +232,6 @@ ul {
     background-size: 30px;
     margin-bottom: 40px;
     text-align: center;
-}
-
-@media (min-width: 750px) {
-    .icono {
-        margin-bottom: 0;
-    }
 }
 
 .icono1 {
@@ -277,12 +258,7 @@ ul {
     text-align: center;
     border: 4px solid rgba(170, 9, 9, 0.774);
     background: rgba(102, 5, 5, 0.952);
-}
-
-@media(min-width:550px) {
-    .card {
-        text-align: left;
-    }
+    margin-bottom: 40px;
 }
 
 .info-card {
@@ -290,9 +266,18 @@ ul {
     color: black;
 }
 
-.info-card p,
-.card h4 {
+.info-card h4 {
     margin-bottom: 5px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+}
+
+.info-card p {
+    color: #430507;
+}
+
+.info-card p {
+    color: whitesmoke;
 }
 
 .info-card .precio {
@@ -301,45 +286,41 @@ ul {
     margin-top: 10px;
 }
 
-.info-card .precio span {
-    font-weight: 700;
-    /*grosor de letra*/
-    font-size: 22px;
-}
-
 .footer {
     margin-top: 40px;
-    padding-top: 40px;
+    padding: 60px;
     background: -webkit-linear-gradient(left, rgba(87, 5, 5, 0.918)100%, #430507 100%);
+    background-color: #b3535377;
 }
 
 .footer .menu a {
+    float: left;
+    width: 60%;
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
 }
 
 .social-media {
-    width: 60%;
-    top: 60%;
-    display: flex;
-    justify-content: flex-end;
+    width: 40%;
+    display: block;
 }
 
 .social-media-icon {
-    display: inline-block;
+    float: right;
+    display: block;
     margin-left: 20px;
     width: 60px;
     height: 60px;
-    border: 2px solid black;
+    border: 2px solid rgb(113, 113, 113);
     border-radius: 5px;
     text-align: center;
-    color: black;
+    color: rgb(113, 113, 113);
 }
 
 .social-media-icon:hover {
-    background: black;
-    color: rgba(170, 9, 9, 0.774);
+    color: white;
+    border-color: white;
 }
 
 .social-media-icon i {
@@ -347,9 +328,199 @@ ul {
     line-height: 60px;
 }
 
+.clearfix {
+    clear: both;
+    float: none;
+}
+
 .mi-correo {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 15px;
+    font-size: 18px;
+    float: right;
     color: silver;
+    text-align: center;
+}
+
+.mi-phone {
+    font-size: 18px;
+    float: right;
+    color: silver;
+    text-align: center;
+}
+
+.footer-final {
+    width: 100%;
+    height: 20px;
+    background: silver;
+    text-align: center;
+    color: #430507;
+}
+
+@media screen and (max-width: 600px) {
+    .columns-header {
+        width: 60%;
+    }
+    .u-pull-right {
+        width: 40%;
+    }
+    .submenu:hover #carrito {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .row {
+        height: 130px;
+    }
+    .social-redes ul li a {
+        padding: 6px 10px;
+    }
+    .social-redes ul li a:hover {
+        padding: 8px 16px;
+    }
+    .columns-header {
+        width: 60%;
+    }
+    .u-pull-right {
+        width: 40%;
+    }
+    .submenu:hover #carrito {
+        padding: 20px;
+        border-radius: 3px;
+    }
+    .submenu {
+        left: auto;
+    }
+    .vacio {
+        padding: 5px;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .contenido-hero form #buscador {
+        height: 60%;
+    }
+    input[type="text"] {
+        padding: 4px 8px;
+    }
+    .borrar-plato {
+        padding: 8px;
+    }
+    .footer {
+        margin-top: 60%;
+    }
+    .footer .four {
+        width: 80%;
+    }
+    .footer .social {
+        display: block;
+    }
+    .footer .social-icons {
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .social-media-icon i {
+        line-height: 40px;
+    }
+    .mi-correo {
+        font-size: 14px;
+    }
+    .mi-phone {
+        font-size: 14px;
+    }
+    .footer-final {
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .row {
+        height: 100px;
+    }
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+    .social-redes ul li a {
+        padding: 3px 8px;
+    }
+    .social-redes ul li a:hover {
+        padding: 5px 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .submenu {
+        top: 20px;
+        left: 10px;
+    }
+    .submenu:hover #carrito {
+        width: 250px;
+        border-radius: 3px;
+    }
+    #carrito .u-full-width {
+        font-size: 10px;
+    }
+    #carrito img {
+        width: 50px;
+    }
+    .vacio {
+        width: 100%;
+        padding: 2px;
+        border-radius: 3px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .contenido-hero form #buscador {
+        height: 40%;
+    }
+    input[type="text"] {
+        padding: 3px 6px;
+        font-size: 16px;
+    }
+    .barra p {
+        font-size: 12px;
+    }
+    .borrar-plato {
+        padding: 5px;
+    }
+    .icono {
+        padding-left: 40px;
+        margin-bottom: 40px;
+    }
+    .social-media-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .social-media-icon i {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .mi-correo {
+        font-size: 12px;
+    }
+    .mi-phone {
+        font-size: 12px;
+    }
+    .footer .menu a {
+        width: 100%;
+    }
+    .footer a {
+        text-align: left;
+    }
+    .footer-final {
+        height: 14px;
+    }
+    .footer-final p {
+        font-size: 12px;
+    }
 }
