@@ -1,2 +1,2 @@
-# P-gina-web-de-una-casa-de-comida
-Es una página web, diseñada para tener una referencia de mi  tipo de diseño y desarrollo.
+# Pagina-menu-de-comida
+Es una página web de menu con el uso de html y css.
